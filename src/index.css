@@ -1,0 +1,173 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.title {
+  text-align: center;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+tbody input[type="checkbox"] {
+  display: block;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #333;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+
+nav select {
+  padding: 10px;
+  background-color: #444;
+  color: white;
+  font-size: 13px;
+}
+
+nav label {
+  color: white;
+  margin-right: 10px;
+}
+
+.main-content {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.rotating-image-container {
+  text-align: center;
+}
+
+.rotating-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
+  animation: rotateImage 10s linear infinite;
+}
+
+.prayer-title {
+  text-align: center;
+}
+
+footer > div {
+  font-style: italic;
+  margin-left: 28px;
+}
+
+@keyframes rotateImage {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media queries for responsive design */
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  nav li {
+    margin-right: 10px;
+  }
+
+  nav select {
+    font-size: 12px;
+  }
+
+  .main-content {
+    padding: 50px 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav li {
+    margin-right: 5px;
+  }
+
+  nav select {
+    font-size: 11px;
+  }
+
+  .main-content {
+    padding: 50px 5px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  nav li {
+    margin-right: 2px;
+  }
+
+  nav select {
+    font-size: 10px;
+  }
+
+  th,
+  td {
+    padding: 6px;
+  }
+
+  .rotating-image {
+    max-width: 200px;
+  }
+}
